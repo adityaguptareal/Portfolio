@@ -8,6 +8,7 @@ import Navbar from './components/Navbar'
 import LogoSection from './components/LogoSection'
 import FeaturedCard from './components/FeaturedCard'
 import ExperienceSection from './components/ExperienceSection'
+import TechStack from './components/TechStack'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <LogoSection/>
       <FeaturedCard/>
       <ExperienceSection/>
+      <TechStack/>
     </>
   )
 }
