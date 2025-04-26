@@ -4,6 +4,7 @@ import Button from "../components/Button";
 import HeroExperience from "../components/HeroModels/HeroExperience";
 import gsap from "gsap";
 import { useGSAP} from "@gsap/react";
+import AnimatedCounter from "../components/AnimatedCounter";
 
 function Hero() {
   // const words=[{
@@ -79,6 +80,7 @@ function Hero() {
         </div>
       </figure>
     </div>
+    <AnimatedCounter/>
     </section>
   );
 }
