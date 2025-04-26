@@ -248,18 +248,25 @@ const navLinks = [
     {
       name: "insta",
       imgPath: "/images/insta.png",
+      url: "https://www.instagram.com/adityaguptareal",
     },
     {
       name: "fb",
       imgPath: "/images/fb.png",
+      url: "https://www.facebook.com/@adityaguptareal",
+
     },
     {
       name: "x",
       imgPath: "/images/x.png",
+      url: "https://www.x.com/@adityaguptareal",
+
     },
     {
       name: "linkedin",
       imgPath: "/images/linkedin.png",
+      url: "http://linkedin.com/in/adityaguptareal/",
+
     },
   ];
   
