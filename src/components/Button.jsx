@@ -2,7 +2,17 @@ import React from 'react'
 
 function Button({text,className,id}) {
   return (
-   <a className={`${className ?? ""} cta-wrapper`} >
+   <a  onClick={(e)=>{
+e.preventDefault()
+const target = document.getElementById("counter")
+if(target && id){
+  const offSet=windows.innerHeight*0.15
+  const top=target.getBoundingClientRect().top+window.scrollY-offSet
+  windows.scrollTo({top, behavior:"smooth"})
+}
+   }}
+   
+   className={`${className ?? ""} cta-wrapper`} >
     <div className='cta-button group'>
         <div className='bg-circle'/>
         <p className="text">{text}</p>
