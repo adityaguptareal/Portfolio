@@ -91,23 +91,23 @@ const navLinks = [
   
   const techStackImgs = [
     {
-      name: "React Developer",
+      name: "React",
       imgPath: "/images/logos/react.png",
     },
     {
-      name: "Python Developer",
-      imgPath: "/images/logos/python.svg",
+      name: "Node.js",
+      imgPath: "/images/logos/nodejs.svg",
     },
     {
-      name: "Backend Developer",
-      imgPath: "/images/logos/node.png",
+      name: "MongoDB",
+      imgPath: "/images/logos/mongodb.svg",
     },
     {
-      name: "Interactive Developer",
-      imgPath: "/images/logos/three.png",
+      name: "Tailwind CSS",
+      imgPath: "/images/logos/tailwind.png",
     },
     {
-      name: "Project Manager",
+      name: "Git",
       imgPath: "/images/logos/git.svg",
     },
   ];
