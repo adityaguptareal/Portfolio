@@ -1,29 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { words } from "../constants";
 import Button from "../components/Button";
 import HeroExperience from "../components/HeroModels/HeroExperience";
 import gsap from "gsap";
 import { useGSAP} from "@gsap/react";
 import AnimatedCounter from "../components/AnimatedCounter";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Hero() {
-  // const words=[{
-  //     text:"Ideas", imgPath:"/images/ideas.svg",
-  //     text:"Concepts", imgPath:"/images/concepts.svg"
-  // }]
-
-   useGSAP(()=>{
-    gsap.fromTo(".hero-text h1",{
-        y:50,
-        opacity:0
-    },{
-        y:0,
-        opacity:1,
-        stagger:0.2,
-        duration:1,
-        ease:"power2.inOut"
-    })
-   })
+  useEffect(() => {
+    // Initialize ScrollTrigger for animations
+    gsap.fromTo(
+      ".hero-text h1",
+      { y: 50, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        stagger: 0.2,
+        duration: 1,
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: "#hero",
+          start: "top center",
+        },
+      }
+    );
+  }, []);
 
   return (
     <section id="hero" className="relative overflow-hidden">
@@ -37,7 +41,7 @@ function Hero() {
         <div className="flex flex-col gap-7">
           <div className="hero-text">
             <h1>
-              Shaping
+              Turning
               <span className="slide">
                 <span className="wrapper">
                   {words.map((word, index) => (
@@ -56,13 +60,12 @@ function Hero() {
                 </span>
               </span>
             </h1>
-            <h1>into Real Projects</h1>
-            <h1>that Deliver Results</h1>
+            <h1>into Real Solution</h1>
+            <h1>that Solves your Problem</h1>
           </div>
 
           <p className="text-white-50 text-md max relative z-10 pointer-events-none">
-            Hi, I’m Aditya, a developer based in Noida with a passion for
-            solving problem through code.
+          Hi, I’m Aditya, turning ideas into real solutions through code.
           </p>
 
           <Button
