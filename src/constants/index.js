@@ -91,7 +91,7 @@ const navLinks = [
     {
       imgPath: "/images/seo.png",
       title: "Market Mastery",
-      desc: "Transform market chaos into your competitive edge: We craft breakthrough solutions that skyrocket your success! ",
+      desc: "Turn market challenges into opportunities! We create innovative solutions that help you succeed and stand out ",
     },
     {
       imgPath: "/images/chat.png",
