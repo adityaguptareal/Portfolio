@@ -75,7 +75,7 @@ function ShowcaseSection() {
           <div className="project-list-wrapper overflow-hidden">
             <div
               className="project cursor-pointer"
-              onClick={handleProject("https://aihealthcare.example.com/")}
+              onClick={handleProject("https://vitalaicure.web.app/")}
               ref={project2Ref}
             >
               <div className="image-wrapper bg-[#ffefdb]">
@@ -88,7 +88,8 @@ function ShowcaseSection() {
             </div>
             <div
               className="project cursor-pointer"
-              onClick={handleProject("kidslearnifyr.web.app")}
+              
+              onClick={handleProject("https://kidslearnifyr.web.app/")}
               ref={project3Ref}
             >
               <div
