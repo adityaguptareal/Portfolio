@@ -1,8 +1,9 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-
+import toast, { Toaster } from 'react-hot-toast'
 import TitleHeader from "../components/TitleHeader";
 import ContactExperience from "../components/ContactExperience";
+
 const Contact = () => {
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
@@ -14,27 +15,37 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
+    setForm((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Show loading state
+    setLoading(true);
+
+    if (!formRef.current) {
+      console.error("Form ref is null!");
+      setLoading(false);
+      return;
+    }
 
     try {
-      await emailjs.sendForm(
+      const result = await emailjs.sendForm(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         formRef.current,
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       );
 
-      // Reset form and stop loading
+      console.log("SUCCESS!", result.text);
+      toast.success("Message sent successfully!");
+
+      // Clear form
       setForm({ name: "", email: "", message: "" });
     } catch (error) {
-      console.error("EmailJS Error:", error); // Optional: show toast
+      console.error("FAILED...", error);
+      toast.error("Failed to send message.");
     } finally {
-      setLoading(false); // Always stop loading, even on error
+      setLoading(false);
     }
   };
 
@@ -92,7 +103,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <button type="submit">
+                <button type="submit" disabled={loading}>
                   <div className="cta-button group">
                     <div className="bg-circle" />
                     <p className="text">
@@ -113,6 +124,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Toaster/>
     </section>
   );
 };

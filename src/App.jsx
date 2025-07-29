@@ -12,6 +12,7 @@ import ExperienceSection from "./components/ExperienceSection";
 import TechStack from "./components/TechStack";
 import Testimonial from "./components/Testimonial";
 import Contact from "./sections/Contact";
+import toast, { Toaster } from 'react-hot-toast';
 import Footer from "./components/Footer";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -45,7 +46,7 @@ function App() {
       <FeaturedCard />
       <ExperienceSection />
       <TechStack />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Contact />
       <Footer />
     </>

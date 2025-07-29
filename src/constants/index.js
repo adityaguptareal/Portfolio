@@ -163,41 +163,41 @@ const techStackIcons = [
 const expCards = [
   {
     review:
-      "Aditya delivered the project before deadline and helped us transform our outdated coaching website into a modern, responsive platform.",
+      "Aditya helped us launch our first event website for VytoFlow 1.0. The registration and certificate system worked flawlessly!",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "Freelance Web Developer",
-    date: "April 2024 - Present",
+    title: "Event Website Developer – VytoFlow",
+    date: "Feb 2024 – March 2024",
     responsibilities: [
-      "Built responsive and SEO-friendly websites for education businesses using React & Node.js.",
-      "Integrated WhatsApp automation for client lead generation from Google Maps.",
-      "Provided retainer services including website maintenance and performance optimization.",
+      "Built a full event website to manage registrations, showcase schedules, and enable certificate distribution.",
+      "Handled end-to-end flow from user signups to automated certificate generation.",
+      "Optimized the site for performance and ease of use during high-traffic event days.",
     ],
   },
   {
     review:
-      "We hired Aditya to create a portfolio website, and he exceeded expectations. Fast, professional, and technically sound.",
+      "Aditya created a robust backend system that helped us securely store and monitor campaign data. Highly reliable!",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
-    title: "Portfolio Project Developer",
-    date: "July 2024 - August 2024",
+    title: "Backend Developer – BigBlare",
+    date: "March 2024 – April 2024",
     responsibilities: [
-      "Created a fully responsive personal brand website with smooth navigation and animations.",
-      "Used Tailwind CSS and Framer Motion to enhance UI experience.",
-      "Deployed project with scalable hosting for performance testing.",
+      "Developed a Node.js backend to store and manage data for the internal monitoring system.",
+      "Implemented secure APIs and database schemas for data consistency and speed.",
+      "Collaborated with frontend and strategy teams to ensure accurate data flow.",
     ],
   },
   {
     review:
-      "Aditya worked on an influencer marketing agency website with us. Great with deadlines and UI presentation.",
+      "We needed a fresh start, and Aditya gave us that. From setting up WordPress to ranking us on Google – everything was on point.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
-    title: "Frontend Developer - BrandNeoMedia",
-    date: "June 2024 - July 2024",
+    title: "WordPress Developer & SEO Consultant – BrandNeoMedia",
+    date: "May 2024 – June 2024",
     responsibilities: [
-      "Developed landing page with dynamic sections to showcase services and client brands.",
-      "Ensured responsiveness across devices and optimized for performance.",
-      "Collaborated directly with marketing team to align branding and messaging.",
+      "Built a custom WordPress website from scratch with tailored sections for influencers and brands.",
+      "Integrated form systems with separate labels for lead management and collaboration requests.",
+      "Set up foundational SEO to help the site rank on Google’s first page for targeted keywords.",
     ],
   },
 ];
